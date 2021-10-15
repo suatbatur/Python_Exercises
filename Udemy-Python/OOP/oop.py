@@ -102,28 +102,39 @@
 
 #----------override---------------
 
-class Çalışan():
-    def __init__(self,isim,maaş,departman):
-        print("Çalışan sınıfının init fonksiyonu")
-        self.isim = isim
-        self.maaş = maaş
-        self.departman = departman
-    def bilgilerigoster(self):
+# class Çalışan():
+#     def __init__(self,isim,maaş,departman):
+#         print("Çalışan sınıfının init fonksiyonu")
+#         self.isim = isim
+#         self.maaş = maaş
+#         self.departman = departman
+#     def bilgilerigoster(self):
         
-        print("Çalışan sınıfının bilgileri.....")
+#         print("Çalışan sınıfının bilgileri.....")
         
-        print("İsim : {} \nMaaş: {} \nDepartman: {}\n".format(self.isim,self.maaş,self.departman))
-    def departman_degistir(self,yeni_departman):
-        print("Departman değişiyor....")
-        self.departman = yeni_departman
+#         print("İsim : {} \nMaaş: {} \nDepartman: {}\n".format(self.isim,self.maaş,self.departman))
+#     def departman_degistir(self,yeni_departman):
+#         print("Departman değişiyor....")
+#         self.departman = yeni_departman
         
         
-class Yönetici(Çalışan):
-    def __init__(self,isim,maaş,departman,kişi_sayısı):
-        print("yönetici sınıfının init fonksiyonu")
-        self.isim = isim
-        self.maaş = maaş
-        self.departman = departman
-        self.kişi_sayısı = kişi_sayısı
-    def zam_yap(self,zam_miktarı):
-        self.maaş += zam_miktarı
+# class Yönetici(Çalışan):
+   
+#     def __init__(self,isim,maaş,departman,kişi_sayısı):
+#         print("yönetici sınıfının init fonksiyonu")
+#         self.isim = isim
+#         self.maaş = maaş
+#         self.departman = departman
+#         self.kişi_sayısı = kişi_sayısı
+        
+#     def bilgilerigoster(self):
+        
+#         print("yönetici sınıfının bilgileri.....")
+        
+#         print("İsim : {} \nMaaş: {} \nDepartman: {}\nSorumlu kişi sayısı: {}".format(self.isim,self.maaş,self.departman,self.kişi_sayısı))
+    
+#     def zam_yap(self,zam_miktarı):
+#         self.maaş += zam_miktarı
+        
+# yönetici = Yönetici("osman", 6000, "IT", 10)
+# yönetici.bilgilerigoster()
