@@ -66,3 +66,8 @@
 # yazılımcı1.zam_yap(250)
 # yazılımcı1.bilgilerigöster()
 
+
+#------------inheritance-----------------
+
+
+
