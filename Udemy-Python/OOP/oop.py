@@ -69,5 +69,61 @@
 
 #------------inheritance-----------------
 
+# class Çalışan():
+#     def __init__(self,isim,maaş,departman):
+#         print("Çalışan sınıfının init fonksiyonu")
+#         self.isim = isim
+#         self.maaş = maaş
+#         self.departman = departman
+#     def bilgilerigoster(self):
+        
+#         print("Çalışan sınıfının bilgileri.....")
+        
+#         print("İsim : {} \nMaaş: {} \nDepartman: {}\n".format(self.isim,self.maaş,self.departman))
+#     def departman_degistir(self,yeni_departman):
+#         print("Departman değişiyor....")
+#         self.departman = yeni_departman
+        
+        
+# class Yönetici(Çalışan):
+#     def zam_yap(self,zam_miktarı):
+#         self.maaş += zam_miktarı
+
+# # yönetici = Yönetici("suat",3000,"bilişim")
+# # yönetici.bilgilerigoster()
+# # yönetici.departman_degistir("human resources")
+# # yönetici.bilgilerigoster()
+
+# yönetici=Yönetici("cansu",5000,"IT")
+# yönetici.zam_yap(1000)
+# yönetici.departman_degistir("IK")
+# yönetici.bilgilerigoster()
 
 
+#----------override---------------
+
+class Çalışan():
+    def __init__(self,isim,maaş,departman):
+        print("Çalışan sınıfının init fonksiyonu")
+        self.isim = isim
+        self.maaş = maaş
+        self.departman = departman
+    def bilgilerigoster(self):
+        
+        print("Çalışan sınıfının bilgileri.....")
+        
+        print("İsim : {} \nMaaş: {} \nDepartman: {}\n".format(self.isim,self.maaş,self.departman))
+    def departman_degistir(self,yeni_departman):
+        print("Departman değişiyor....")
+        self.departman = yeni_departman
+        
+        
+class Yönetici(Çalışan):
+    def __init__(self,isim,maaş,departman,kişi_sayısı):
+        print("yönetici sınıfının init fonksiyonu")
+        self.isim = isim
+        self.maaş = maaş
+        self.departman = departman
+        self.kişi_sayısı = kişi_sayısı
+    def zam_yap(self,zam_miktarı):
+        self.maaş += zam_miktarı
